@@ -28,7 +28,7 @@ public class CustomerInfo extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Customer info");
         setSize(550,350);
-        setResizable(false);
+        setResizable(true);
         setLayout(new FlowLayout());
         info=new JLabel("Customer information:");
         first=new JLabel("First name:");

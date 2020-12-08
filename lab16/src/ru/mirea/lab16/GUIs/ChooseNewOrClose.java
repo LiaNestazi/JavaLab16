@@ -15,7 +15,7 @@ public class ChooseNewOrClose extends JFrame {
     public ChooseNewOrClose(JFrame custinfo, Customer customer, TableOrdersManager tm, InternetOrdersManager im){
         setTitle("New order?");
         setSize(240,170);
-        setResizable(false);
+        setResizable(true);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         choose=new JLabel("Do you want to place a new order?");

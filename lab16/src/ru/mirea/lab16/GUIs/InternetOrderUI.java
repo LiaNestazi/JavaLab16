@@ -96,7 +96,14 @@ public class InternetOrderUI extends JFrame {
                             order.add(drink[i]);
                         }
                         else {
-                            for (int j = 0; j < Integer.parseInt(drinksCount[i].getText()); j++) {
+                            int count=1;
+                            try {
+                                count=Integer.parseInt(drinksCount[i].getText());
+                            }
+                            catch (IllegalArgumentException ex){
+                                JOptionPane.showMessageDialog(getContentPane(), "Drink count field is incorrect");
+                            }
+                            for (int j = 0; j < count; j++) {
                                 order.add(drink[i]);
                             }
                         }
@@ -108,7 +115,14 @@ public class InternetOrderUI extends JFrame {
                             order.add(dish[i]);
                         }
                         else {
-                            for (int j = 0; j < Integer.parseInt(dishesCount[i].getText()); j++) {
+                            int count=1;
+                            try {
+                                count=Integer.parseInt(dishesCount[i].getText());
+                            }
+                            catch (IllegalArgumentException ex){
+                                JOptionPane.showMessageDialog(getContentPane(), "Dish count field is incorrect");
+                            }
+                            for (int j = 0; j < count; j++) {
                                 order.add(dish[i]);
                             }
                         }

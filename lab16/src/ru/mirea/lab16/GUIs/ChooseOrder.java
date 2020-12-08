@@ -15,7 +15,7 @@ public class ChooseOrder extends JFrame {
     public ChooseOrder(JFrame custinfo, JFrame prev, Customer customer, TableOrdersManager tm, InternetOrdersManager im){
         setTitle("Order Type");
         setSize(160,200);
-        setResizable(false);
+        setResizable(true);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         choose=new JLabel("Choose type of order:");

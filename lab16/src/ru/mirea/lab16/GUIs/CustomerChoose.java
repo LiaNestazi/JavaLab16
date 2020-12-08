@@ -16,7 +16,7 @@ public class CustomerChoose extends JFrame {
     public CustomerChoose(JFrame custinfo, Customer customer, TableOrdersManager tm, InternetOrdersManager im){
         setTitle("Order Type");
         setSize(250,170);
-        setResizable(false);
+        setResizable(true);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         choose=new JLabel("Do you want to create new customer?");
